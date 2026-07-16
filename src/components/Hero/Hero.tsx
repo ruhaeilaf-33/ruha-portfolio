@@ -9,8 +9,9 @@ function Hero() {
 
       <div className="hero-left">
 
+
         <p className="hero-badge">
-          COMPUTER SCIENCE ENGINEER
+          COMPUTER SCIENCE ENGINEERING STUDENT
         </p>
 
         <h1 className="hero-title">
@@ -25,9 +26,11 @@ function Hero() {
 
         <p className="hero-description">
 
-          Passionate about crafting impactful software through
-          Artificial Intelligence, Full Stack Development and
-          Data Analytics.
+          Computer Science Engineering student passionate about
+          building intelligent software through Artificial
+          Intelligence, Full Stack Development, and Data Analytics.
+          Driven by continuous learning and creating impactful,
+          user-focused digital solutions.
 
         </p>
 
@@ -70,7 +73,7 @@ function Hero() {
 
           <div>
 
-            <h3>5</h3>
+            <h3>5+</h3>
 
             <p>Certifications</p>
 
@@ -78,9 +81,9 @@ function Hero() {
 
           <div>
 
-            <h3>AI</h3>
+            <h3>2027</h3>
 
-            <p>Focus</p>
+            <p>Graduating</p>
 
           </div>
 

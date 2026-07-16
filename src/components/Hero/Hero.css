@@ -134,16 +134,17 @@
 
     padding:15px 34px;
 
-    background:white;
+    background:var(--surface);
 
     border:1px solid var(--border);
+
+    color:var(--heading);
 
     border-radius:999px;
 
     transition:.35s;
 
 }
-
 .secondary-btn:hover{
 
     border-color:var(--accent);
@@ -165,6 +166,21 @@
     gap:28px;
 
     width:100%;
+
+}
+.hero-greeting{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:var(--accent);
+
+    margin-bottom:18px;
 
 }
 
@@ -225,7 +241,6 @@
 }
 
 /* Background Circle */
-
 .hero-circle{
 
     position:absolute;
@@ -236,7 +251,7 @@
 
     border-radius:50%;
 
-    background:#F5DADA;
+    background:var(--accent-soft);
 
     top:-15px;
 
@@ -260,7 +275,7 @@
 
     height:390px;
 
-    border:1.5px solid #E8C5C5;
+    border:1.5px solid var(--accent-outline);
 
     border-radius:50%;
 
@@ -278,13 +293,15 @@
 
     height:390px;
 
-    background:white;
+    background:var(--surface);
+
+    border:1px solid var(--border);
 
     border-radius:34px;
 
     padding:10px;
 
-    box-shadow:0 20px 50px rgba(0,0,0,.07);
+    box-shadow:var(--shadow);
 
     position:relative;
 

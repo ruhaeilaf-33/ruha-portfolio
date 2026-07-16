@@ -2,7 +2,8 @@ import "./ProfessionalDevelopment.css";
 import {
   FaShieldAlt,
   FaLaptopCode,
-  FaHandshake
+  FaHandshake,
+  FaCode
 } from "react-icons/fa";
 
 function ProfessionalDevelopment() {
@@ -25,7 +26,7 @@ function ProfessionalDevelopment() {
         <p className="section-description">
           Experiences that strengthened my technical expertise,
           teamwork, communication, and problem-solving skills
-          through hackathons, volunteering, and practical learning.
+          through hackathons, volunteering, and continuous learning.
         </p>
 
       </div>
@@ -108,7 +109,7 @@ function ProfessionalDevelopment() {
 
         </div>
 
-        {/* ================= EDULATERAL ================= */}
+        {/* ================= RPC ================= */}
 
         <div className="development-card">
 
@@ -116,26 +117,27 @@ function ProfessionalDevelopment() {
             <FaHandshake />
           </div>
 
-          <h3>Edulateral Higher Education Challenge</h3>
+          <h3>RPC 2024</h3>
 
-          <h4>Volunteer</h4>
+          <h4>Student Volunteer</h4>
 
           <p>
-            Volunteered for the Edulateral Higher Education
-            Challenge, contributing to educational outreach
-            initiatives while enhancing communication,
-            teamwork, leadership, and professional networking.
+            Volunteered at the RPC 2024 program conducted by
+            Edulateral Higher Education, contributing to
+            educational outreach initiatives while strengthening
+            communication, teamwork, collaboration, and gaining
+            valuable exposure to current trends in the IT industry.
           </p>
 
           <div className="development-tags">
-
-            <span>Leadership</span>
 
             <span>Communication</span>
 
             <span>Teamwork</span>
 
-            <span>Networking</span>
+            <span>Collaboration</span>
+
+            <span>IT Industry Exposure</span>
 
           </div>
 
@@ -146,6 +148,59 @@ function ProfessionalDevelopment() {
             className="development-link"
           >
             View Certificate →
+          </a>
+
+        </div>
+
+        {/* ================= COMPETITIVE PROGRAMMING ================= */}
+
+        <div className="development-card">
+
+          <div className="development-icon">
+            <FaCode />
+          </div>
+
+          <h3>Competitive Programming</h3>
+
+          <h4>HackerRank & LeetCode</h4>
+
+          <p>
+            Regularly solving coding challenges to strengthen
+            algorithmic thinking, data structures, and
+            problem-solving skills through consistent practice on
+            competitive programming platforms.
+          </p>
+
+          <div className="development-tags">
+
+            <span>Problem Solving</span>
+
+            <span>Data Structures</span>
+
+            <span>Algorithms</span>
+
+            <span>Java & SQL</span>
+
+          </div>
+
+          <a
+            href="https://www.hackerrank.com/profile/ruhaeilaf33"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="development-link"
+          >
+            HackerRank Profile →
+          </a>
+
+          <br />
+
+          <a
+            href="https://leetcode.com/u/Eilaf033/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="development-link"
+          >
+            LeetCode Profile →
           </a>
 
         </div>

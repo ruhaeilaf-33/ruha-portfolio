@@ -22,7 +22,7 @@ function About() {
         </h2>
 
         <p className="about-description">
-          I'm Ruha Eilaf, a Computer Science Engineering student with a
+          I'm a Computer Science Engineering student with a
           passion for creating impactful software solutions through
           Artificial Intelligence, Full Stack Development and Data
           Analytics.
@@ -85,7 +85,7 @@ function About() {
           <h3>Learning</h3>
 
           <p>
-            5 Professional Certifications
+            5+ Professional Certifications
           </p>
 
         </div>

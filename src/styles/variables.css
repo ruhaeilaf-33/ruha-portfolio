@@ -32,5 +32,49 @@
     --container:1180px;
 
     --transition:.35s ease;
+    --accent-soft:#F5DADA;
+
+--accent-outline:#E8C5C5;
+
+--navbar-bg:rgba(250,248,246,.92);
+
+}
+
+/* =======================================
+   DARK MODE
+======================================= */
+
+[data-theme="dark"]{
+
+    /* Background */
+
+    --bg:#131417;
+
+    --surface:#1C1E22;
+
+    /* Text */
+
+    --heading:#F5F5F5;
+
+    --text:#C7CBD4;
+
+    /* Accent */
+
+    --accent:#D28B94;
+
+    --accent-hover:#E09DA6;
+
+    /* UI */
+
+    --border:#2E3238;
+
+--tag:#2A2E35;
+    --shadow:
+        0 20px 55px rgba(0,0,0,.45);
+        --accent-soft:rgba(210,139,148,.12);
+
+--accent-outline:rgba(210,139,148,.25);
+
+--navbar-bg:rgba(19,20,23,.92);
 
 }
