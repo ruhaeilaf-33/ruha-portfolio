@@ -1,0 +1,283 @@
+/* ===========================
+   PROJECTS
+=========================== */
+
+.projects{
+
+    padding:140px 0;
+
+}
+
+.projects-header{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 80px;
+
+}
+
+.section-title span{
+
+    color:var(--accent);
+
+}
+
+.projects-wrapper{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:50px;
+
+}
+
+/* ===========================
+   PROJECT CARD
+=========================== */
+
+.project-card{
+
+    display:grid;
+
+    grid-template-columns:340px 1fr;
+
+    gap:50px;
+
+    align-items:center;
+
+    background:#ffffff;
+
+    border:1px solid #ECE6E1;
+
+    border-radius:30px;
+
+    padding:40px;
+
+    box-shadow:0 18px 50px rgba(0,0,0,.05);
+
+    transition:.35s ease;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 25px 70px rgba(0,0,0,.08);
+
+}
+
+/* Alternate Layout */
+
+.project-card:nth-child(even){
+
+    grid-template-columns:1fr 340px;
+
+}
+
+.project-card:nth-child(even) .project-image{
+
+    order:2;
+
+}
+
+.project-card:nth-child(even) .project-content{
+
+    order:1;
+
+}
+
+/* ===========================
+   IMAGE
+=========================== */
+
+.project-image{
+
+    width:100%;
+
+    height:240px;
+
+    overflow:hidden;
+
+    border-radius:24px;
+
+    background:#F8F5F2;
+
+}
+
+.project-image img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.45s;
+
+}
+
+.project-card:hover .project-image img{
+
+    transform:scale(1.05);
+
+}
+
+/* ===========================
+   CONTENT
+=========================== */
+
+.project-content h3{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+    color:var(--heading);
+
+}
+
+.project-content h4{
+
+    color:var(--accent);
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+}
+
+.project-content p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+    margin-bottom:28px;
+
+    max-width:620px;
+
+}
+
+/* ===========================
+   TECH STACK
+=========================== */
+
+.project-tech{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:10px;
+
+    margin-bottom:30px;
+
+}
+
+.project-tech span{
+
+    padding:8px 16px;
+
+    background:#F8F5F2;
+
+    color:#7A6D66;
+
+    border-radius:999px;
+
+    font-size:13px;
+
+    border:1px solid #EFE8E3;
+
+    transition:.3s;
+
+}
+
+.project-tech span:hover{
+
+    background:#B76E79;
+
+    color:white;
+
+    border-color:#B76E79;
+
+}
+
+/* ===========================
+   LINK
+=========================== */
+
+.project-link{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    text-decoration:none;
+
+    color:#1E1E24;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.project-link:hover{
+
+    color:var(--accent);
+
+    transform:translateX(6px);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.projects{
+
+    padding:100px 0;
+
+}
+
+.project-card{
+
+    grid-template-columns:1fr !important;
+
+    gap:30px;
+
+    padding:28px;
+
+}
+
+.project-image{
+
+    order:1 !important;
+
+    height:220px;
+
+}
+
+.project-content{
+
+    order:2 !important;
+
+}
+
+.project-content h3{
+
+    font-size:28px;
+
+}
+
+}

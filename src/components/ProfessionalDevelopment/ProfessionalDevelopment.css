@@ -1,0 +1,144 @@
+/* ===========================
+   PROFESSIONAL DEVELOPMENT
+=========================== */
+
+.professional-development{
+    padding:140px 0;
+}
+
+.development-header{
+    text-align:center;
+    max-width:760px;
+    margin:0 auto 80px;
+}
+
+.section-title span{
+    color:var(--accent);
+}
+
+/* ===========================
+   GRID
+=========================== */
+
+.development-grid{
+    display:flex;
+    flex-direction:column;
+    gap:35px;
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.development-card{
+    background:#fff;
+    border:1px solid var(--border);
+    border-left:6px solid var(--accent);
+    border-radius:26px;
+    padding:38px;
+    box-shadow:var(--shadow);
+    transition:.35s ease;
+}
+
+.development-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(0,0,0,.08);
+}
+
+.development-icon{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#F8ECEC;
+    color:var(--accent);
+    border-radius:18px;
+    font-size:28px;
+    margin-bottom:22px;
+}
+
+.development-card h3{
+    font-size:30px;
+    margin-bottom:8px;
+    color:var(--heading);
+}
+
+.development-card h4{
+    color:var(--accent);
+    font-size:18px;
+    margin-bottom:18px;
+    font-weight:600;
+}
+
+.development-card p{
+    color:var(--text);
+    line-height:1.9;
+    margin-bottom:24px;
+}
+
+/* ===========================
+   TAGS
+=========================== */
+
+.development-tags{
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    margin-bottom:28px;
+}
+
+.development-tags span{
+    padding:9px 18px;
+    border-radius:999px;
+    background:var(--tag);
+    color:var(--accent);
+    font-size:13px;
+    font-weight:500;
+    transition:.3s;
+}
+
+.development-tags span:hover{
+    background:var(--accent);
+    color:#fff;
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.development-link{
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-top:8px;
+    font-weight:600;
+    color:var(--heading);
+    text-decoration:none;
+    transition:.3s;
+}
+
+.development-link:hover{
+    color:var(--accent);
+    transform:translateX(5px);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.professional-development{
+    padding:90px 0;
+}
+
+.development-card{
+    padding:28px;
+}
+
+.development-card h3{
+    font-size:26px;
+}
+
+}

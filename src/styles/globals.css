@@ -1,0 +1,94 @@
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    background:var(--bg);
+
+    color:var(--heading);
+
+    font-family:"Inter",sans-serif;
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+}
+
+h1,
+h2,
+h3,
+h4{
+
+    font-family:"Playfair Display",serif;
+
+    font-weight:700;
+
+    color:var(--heading);
+
+}
+
+p{
+
+    color:var(--text);
+
+    line-height:1.8;
+
+}
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+button{
+
+    font-family:inherit;
+
+    border:none;
+
+    outline:none;
+
+}
+
+img{
+
+    display:block;
+
+    max-width:100%;
+
+}
+
+section{
+
+    width:min(var(--container),92%);
+
+    margin:auto;
+
+    padding:120px 0;
+
+}
+
+::selection{
+
+    background:var(--accent);
+
+    color:white;
+
+}

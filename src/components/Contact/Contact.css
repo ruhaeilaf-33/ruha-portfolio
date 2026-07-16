@@ -1,0 +1,73 @@
+.contact{
+
+    padding:120px 0 80px;
+
+}
+
+.contact-content{
+
+    max-width:900px;
+
+    margin:auto;
+
+}
+
+.contact .section-title span{
+
+    color:var(--accent);
+
+}
+
+.contact-links{
+
+    margin-top:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.contact-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:26px 0;
+
+    border-bottom:1px solid var(--border);
+
+    transition:var(--transition);
+
+}
+
+.contact-item:hover{
+
+    color:var(--accent);
+
+}
+
+.contact-item span{
+
+    flex:1;
+
+    margin-left:22px;
+
+    font-size:18px;
+
+}
+
+.contact-item svg:last-child{
+
+    transition:.35s;
+
+}
+
+.contact-item:hover svg:last-child{
+
+    transform:translateX(8px);
+
+}

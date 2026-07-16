@@ -1,0 +1,183 @@
+/* ===========================
+   CERTIFICATIONS
+=========================== */
+
+.certifications{
+
+    padding:120px 0;
+
+}
+
+.certifications-header{
+
+    text-align:center;
+
+    max-width:760px;
+
+    margin:0 auto 70px;
+
+}
+
+.section-title span{
+
+    color:var(--accent);
+
+}
+
+/* ===========================
+   LIST
+=========================== */
+
+.certifications-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+/* ===========================
+   CARD
+=========================== */
+
+.certificate-card{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:30px;
+
+    background:#fff;
+
+    border:1px solid var(--border);
+
+    border-radius:24px;
+
+    padding:34px 38px;
+
+    box-shadow:var(--shadow);
+
+    transition:.35s ease;
+
+    text-decoration:none;
+
+}
+
+.certificate-card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 22px 55px rgba(0,0,0,.08);
+
+}
+
+.certificate-card h4{
+
+    color:var(--accent);
+
+    margin-bottom:8px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:1px;
+
+    text-transform:uppercase;
+
+}
+
+.certificate-card h3{
+
+    font-size:24px;
+
+    color:var(--heading);
+
+    margin-bottom:12px;
+
+    max-width:700px;
+
+}
+
+.certificate-card p{
+
+    max-width:700px;
+
+    color:var(--text);
+
+    font-size:15px;
+
+    line-height:1.8;
+
+}
+
+/* ===========================
+   BUTTON
+=========================== */
+
+.certificate-card span{
+
+    white-space:nowrap;
+
+    color:var(--accent);
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.certificate-card:hover span{
+
+    transform:translateX(6px);
+
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:900px){
+
+.certifications{
+
+    padding:90px 0;
+
+}
+
+.certifications-header{
+
+    margin-bottom:50px;
+
+}
+
+.certificate-card{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+    padding:28px;
+
+}
+
+.certificate-card h3{
+
+    font-size:20px;
+
+}
+
+.certificate-card p{
+
+    font-size:14px;
+
+}
+
+}

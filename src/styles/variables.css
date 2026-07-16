@@ -1,0 +1,36 @@
+:root{
+
+    /* Background */
+
+    --bg:#FAF8F6;
+
+    --surface:#FFFFFF;
+
+    /* Text */
+
+    --heading:#1F2430;
+
+    --text:#5F6778;
+
+    /* Accent */
+
+    --accent:#B46C72;
+
+    --accent-hover:#9D5962;
+
+    /* UI */
+
+    --border:#ECE5DF;
+
+    --tag:#F8F4F1;
+
+    --shadow:
+        0 15px 40px rgba(0,0,0,.05);
+
+    --radius:20px;
+
+    --container:1180px;
+
+    --transition:.35s ease;
+
+}
