@@ -1,6 +1,10 @@
+/* ===========================
+   CONTACT
+=========================== */
+
 .contact{
 
-    padding:120px 0 80px;
+    padding:90px 0;
 
 }
 
@@ -12,15 +16,57 @@
 
 }
 
+.contact-header{
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:0 auto 55px;
+
+}
+
+/* ===========================
+   SECTION TITLE
+=========================== */
+
+.section-title{
+
+    font-size:56px;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+
+}
+
 .contact .section-title span{
 
     color:var(--accent);
 
 }
 
+.section-description{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+}
+
+/* ===========================
+   CONTACT LINKS
+=========================== */
+
 .contact-links{
 
-    margin-top:60px;
+    margin-top:50px;
 
     display:flex;
 
@@ -32,11 +78,11 @@
 
     display:flex;
 
-    justify-content:space-between;
-
     align-items:center;
 
-    padding:26px 0;
+    justify-content:space-between;
+
+    padding:30px 0;
 
     border-bottom:1px solid var(--border);
 
@@ -50,24 +96,128 @@
 
 }
 
-.contact-item span{
+.contact-left{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
 
     flex:1;
 
-    margin-left:22px;
+}
+
+.contact-left svg{
+
+    font-size:22px;
+
+    color:var(--accent);
+
+    flex-shrink:0;
+
+}
+
+.contact-left span{
+
+    margin:0;
+
+    font-size:20px;
+
+    font-weight:500;
+
+    color:var(--heading);
+
+}
+
+.contact-item:hover .contact-left span{
+
+    color:var(--accent);
+
+}
+
+.contact-item > svg:last-child{
+
+    font-size:20px;
+
+    transition:transform .35s ease;
+
+}
+
+.contact-item:hover > svg:last-child{
+
+    transform:translateX(8px);
+
+    color:var(--accent);
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.contact{
+
+    padding:70px 0;
+
+}
+
+.contact-header{
+
+    margin-bottom:35px;
+
+}
+
+.section-title{
+
+    font-size:36px;
+
+}
+
+.section-description{
+
+    font-size:15px;
+
+}
+
+.contact-links{
+
+    margin-top:30px;
+
+}
+
+.contact-item{
+
+    padding:20px 0;
+
+}
+
+.contact-left{
+
+    gap:14px;
+
+}
+
+.contact-left svg{
+
+    font-size:20px;
+
+}
+
+.contact-left span{
+
+    font-size:16px;
+
+    word-break:break-word;
+
+}
+
+.contact-item > svg:last-child{
 
     font-size:18px;
 
 }
-
-.contact-item svg:last-child{
-
-    transition:.35s;
-
-}
-
-.contact-item:hover svg:last-child{
-
-    transform:translateX(8px);
 
 }

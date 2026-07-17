@@ -4,7 +4,7 @@
 
 .projects{
 
-    padding:140px 0;
+    padding:90px 0;
 
 }
 
@@ -12,9 +12,41 @@
 
     text-align:center;
 
-    max-width:760px;
+    max-width:850px;
 
-    margin:0 auto 80px;
+    margin:0 auto 55px;
+
+}
+
+/* ===========================
+   SECTION HEADER
+=========================== */
+
+.section-subtitle{
+
+    font-size:16px;
+
+    font-weight:600;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:var(--accent);
+
+    margin-bottom:16px;
+
+}
+
+.section-title{
+
+    font-size:56px;
+
+    line-height:1.15;
+
+    margin-bottom:20px;
+
+    color:var(--heading);
 
 }
 
@@ -23,6 +55,24 @@
     color:var(--accent);
 
 }
+
+.section-description{
+
+    max-width:760px;
+
+    margin:0 auto;
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:var(--text);
+
+}
+
+/* ===========================
+   PROJECT LIST
+=========================== */
 
 .projects-wrapper{
 
@@ -42,7 +92,7 @@
 
     display:grid;
 
-    grid-template-columns:340px 1fr;
+    grid-template-columns:320px 1fr;
 
     gap:50px;
 
@@ -50,13 +100,14 @@
 
     background:var(--surface);
 
-border:1px solid var(--border);
+    border:1px solid var(--border);
 
     border-radius:30px;
 
     padding:40px;
 
-box-shadow:var(--shadow);
+    box-shadow:var(--shadow);
+
     transition:.35s ease;
 
 }
@@ -131,9 +182,9 @@ box-shadow:var(--shadow);
 
 .project-content h3{
 
-    font-size:34px;
+    font-size:38px;
 
-    margin-bottom:10px;
+    margin-bottom:12px;
 
     color:var(--heading);
 
@@ -143,7 +194,7 @@ box-shadow:var(--shadow);
 
     color:var(--accent);
 
-    font-size:16px;
+    font-size:18px;
 
     font-weight:600;
 
@@ -155,11 +206,13 @@ box-shadow:var(--shadow);
 
     color:var(--text);
 
-    line-height:1.8;
+    font-size:17px;
+
+    line-height:1.9;
 
     margin-bottom:28px;
 
-    max-width:620px;
+    max-width:640px;
 
 }
 
@@ -178,6 +231,7 @@ box-shadow:var(--shadow);
     margin-bottom:30px;
 
 }
+
 .project-tech span{
 
     padding:8px 16px;
@@ -224,6 +278,8 @@ box-shadow:var(--shadow);
 
     font-weight:600;
 
+    font-size:16px;
+
     transition:.3s;
 
 }
@@ -244,7 +300,25 @@ box-shadow:var(--shadow);
 
 .projects{
 
-    padding:100px 0;
+    padding:90px 0;
+
+}
+
+.projects-header{
+
+    margin-bottom:45px;
+
+}
+
+.section-title{
+
+    font-size:42px;
+
+}
+
+.section-description{
+
+    font-size:16px;
 
 }
 
@@ -274,7 +348,19 @@ box-shadow:var(--shadow);
 
 .project-content h3{
 
-    font-size:28px;
+    font-size:30px;
+
+}
+
+.project-content h4{
+
+    font-size:17px;
+
+}
+
+.project-content p{
+
+    font-size:16px;
 
 }
 

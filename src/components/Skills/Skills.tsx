@@ -80,7 +80,7 @@ function Skills() {
 
           <h3>Tools</h3>
 
-          <p>Git • GitHub • VS Code • Postman</p>
+          <p>Git • GitHub • VS Code • IntelliJ IDEA </p>
         </div>
 
       </div>

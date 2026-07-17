@@ -4,6 +4,7 @@ import {
   FaLinkedin,
   FaEnvelope,
   FaArrowRight,
+  FaFileAlt,
 } from "react-icons/fa";
 
 function Contact() {
@@ -22,22 +23,27 @@ function Contact() {
 
         <p className="section-description">
           I'm always open to discussing software engineering,
-          AI, full stack development, internships and exciting
+          AI, full stack development, internships, and exciting
           collaboration opportunities.
         </p>
 
         <div className="contact-links">
 
+          {/* Email */}
+
           <a
             href="mailto:ruhaeilaf@gmail.com"
             className="contact-item"
           >
-            <FaEnvelope />
-
-            <span>ruhaeilaf@gmail.com</span>
+            <div className="contact-left">
+              <FaEnvelope />
+              <span>ruhaeilaf@gmail.com</span>
+            </div>
 
             <FaArrowRight />
           </a>
+
+          {/* GitHub */}
 
           <a
             href="https://github.com/ruhaeilaf-33"
@@ -45,12 +51,15 @@ function Contact() {
             rel="noopener noreferrer"
             className="contact-item"
           >
-            <FaGithub />
-
-            <span>GitHub</span>
+            <div className="contact-left">
+              <FaGithub />
+              <span>GitHub</span>
+            </div>
 
             <FaArrowRight />
           </a>
+
+          {/* LinkedIn */}
 
           <a
             href="https://www.linkedin.com/in/ruha-eilaf-495166307/"
@@ -58,21 +67,25 @@ function Contact() {
             rel="noopener noreferrer"
             className="contact-item"
           >
-            <FaLinkedin />
-
-            <span>LinkedIn</span>
+            <div className="contact-left">
+              <FaLinkedin />
+              <span>LinkedIn</span>
+            </div>
 
             <FaArrowRight />
           </a>
+
+          {/* Resume */}
 
           <a
             href="/resume/Ruha_Eilaf_Resume.pdf"
             download
             className="contact-item"
           >
-            📄
-
-            <span>Download Resume</span>
+            <div className="contact-left">
+              <FaFileAlt />
+              <span>Download Resume</span>
+            </div>
 
             <FaArrowRight />
           </a>

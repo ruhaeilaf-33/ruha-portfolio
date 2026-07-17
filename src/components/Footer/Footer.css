@@ -12,13 +12,13 @@
 
     background:linear-gradient(
         to bottom,
-        rgba(194,122,134,.08),
-        rgba(194,122,134,.18)
+        rgba(115,83,163,.08),
+        rgba(115,83,163,.18)
     );
 
 }
 
-/* Soft Rose Glow */
+/* Soft Plum Glow */
 
 .footer::before{
 
@@ -32,7 +32,7 @@
 
     border-radius:50%;
 
-    background:rgba(194,122,134,.22);
+    background:rgba(115,83,163,.22);
 
     top:-260px;
 
@@ -75,5 +75,20 @@
 .footer span{
 
     color:var(--text);
+
+}
+@media(max-width:768px){
+
+.footer h2{
+
+font-size:34px;
+
+}
+
+.footer p{
+
+font-size:15px;
+
+}
 
 }
