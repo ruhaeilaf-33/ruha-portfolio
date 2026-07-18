@@ -3,7 +3,8 @@ import {
   FaShieldAlt,
   FaLaptopCode,
   FaHandshake,
-  FaCode
+  FaCode,
+  FaTrophy
 } from "react-icons/fa";
 
 function ProfessionalDevelopment() {
@@ -20,18 +21,64 @@ function ProfessionalDevelopment() {
         </p>
 
         <h2 className="section-title">
-          Professional <span>Growth.</span>
+          Professional <span>Journey.</span>
         </h2>
 
         <p className="section-description">
-          Experiences that strengthened my technical expertise,
-          teamwork, communication, and problem-solving skills
-          through hackathons, volunteering, and continuous learning.
+          Showcasing hands-on learning through hackathons,
+          volunteering, competitive programming, and industry
+          engagement that strengthened my technical, collaborative,
+          and problem-solving skills.
         </p>
 
       </div>
 
       <div className="development-grid">
+
+        {/* ================= COGNIZANT ================= */}
+
+        <div className="development-card">
+
+          <div className="development-icon">
+            <FaTrophy />
+          </div>
+
+          <h3>Cognizant Technoverse 2026</h3>
+
+          <h4>National Hackathon Participant</h4>
+
+          <p>
+            Participated in Cognizant Technoverse 2026, collaborating
+            with a team to develop innovative software solutions while
+            strengthening problem-solving, software development,
+            teamwork, and analytical thinking in a competitive
+            hackathon environment.
+          </p>
+
+          <div className="development-tags">
+
+            <span>Hackathon</span>
+
+            <span>Problem Solving</span>
+
+            <span>Software Development</span>
+
+            <span>Innovation</span>
+
+            <span>Teamwork</span>
+
+          </div>
+
+          <a
+            href="/Certifications/cognizant.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="development-link"
+          >
+            View Certificate →
+          </a>
+
+        </div>
 
         {/* ================= CYBORG ================= */}
 
@@ -123,10 +170,10 @@ function ProfessionalDevelopment() {
 
           <p>
             Volunteered at the RPC 2024 program conducted by
-            Edulateral Higher Education, contributing to
-            educational outreach initiatives while strengthening
-            communication, teamwork, collaboration, and gaining
-            valuable exposure to current trends in the IT industry.
+            Edulateral Higher Education, contributing to educational
+            outreach initiatives while strengthening communication,
+            teamwork, collaboration, and gaining valuable exposure
+            to current trends in the IT industry.
           </p>
 
           <div className="development-tags">
@@ -135,9 +182,9 @@ function ProfessionalDevelopment() {
 
             <span>Teamwork</span>
 
-            <span>Collaboration</span>
+            <span>Leadership</span>
 
-            <span>IT Industry Exposure</span>
+            <span>Industry Exposure</span>
 
           </div>
 
@@ -152,7 +199,7 @@ function ProfessionalDevelopment() {
 
         </div>
 
-        {/* ================= COMPETITIVE PROGRAMMING ================= */}
+        {/* ================= CODING PRACTICE ================= */}
 
         <div className="development-card">
 
@@ -160,26 +207,28 @@ function ProfessionalDevelopment() {
             <FaCode />
           </div>
 
-          <h3>Competitive Programming</h3>
+          <h3>Coding Practice & Problem Solving</h3>
 
           <h4>HackerRank & LeetCode</h4>
 
           <p>
-            Regularly solving coding challenges to strengthen
-            algorithmic thinking, data structures, and
-            problem-solving skills through consistent practice on
-            competitive programming platforms.
+            Consistently solving coding challenges to strengthen
+            algorithmic thinking, data structures, and problem-solving
+            skills through regular practice on competitive programming
+            platforms.
           </p>
 
           <div className="development-tags">
-
-            <span>Problem Solving</span>
 
             <span>Data Structures</span>
 
             <span>Algorithms</span>
 
-            <span>Java & SQL</span>
+            <span>Problem Solving</span>
+
+            <span>Java</span>
+
+            <span>SQL</span>
 
           </div>
 

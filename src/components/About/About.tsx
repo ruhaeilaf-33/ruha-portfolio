@@ -21,19 +21,19 @@ function About() {
           <span> Intelligent Software.</span>
         </h2>
 
-        <p className="about-description">
-          I'm a Computer Science Engineering student with a
-          passion for creating impactful software solutions through
-          Artificial Intelligence, Full Stack Development and Data
-          Analytics.
+       <p className="about-description">
+  I'm Ruha Eilaf, a Computer Science Engineering student passionate
+  about building intelligent, user-centric software solutions.
+  My interests span Artificial Intelligence, Full Stack Development,
+  and Data Analytics, where I enjoy transforming ideas into
+  scalable, real-world applications.
 
-          <br /><br />
+  <br /><br />
 
-          I enjoy transforming ideas into real-world applications,
-          continuously learning new technologies, and solving meaningful
-          problems through clean, scalable software.
-        </p>
-
+  I thrive on solving meaningful problems through clean, efficient
+  software and continuously expanding my technical expertise through
+  hands-on projects, hackathons, and continuous learning.
+</p>
       </div>
 
       <div className="about-right">
