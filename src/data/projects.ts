@@ -31,20 +31,21 @@ export const projects = [
       "Scikit-learn"
     ]
   },
-
+  
   {
     id: 3,
-    title: "Campus Events Portal",
-    subtitle: "College Event Management Platform",
+    title: "Inventrax",
+    subtitle: "Enterprise Inventory Management Platform",
     description:
-      "A full-stack web application for managing campus events with student registration, QR-based attendance, certificate generation, and an administrative dashboard.",
-    image: "/project-images/campus.png",
-    github: "https://github.com/ruhaeilaf-33/campus_events_portal",
+      "A full-stack inventory management platform for retail and warehouse operations featuring secure authentication, inventory tracking, purchase orders, point-of-sale, reporting, notifications, and role-based access control.",
+    image: "/project-images/inventrax.png",
+    github: "https://github.com/ruhaeilaf-33/InventoryManagementSystem",
     tech: [
-      "Django",
-      "HTML",
-      "CSS",
-      "JavaScript"
+      "React",
+      "Django REST",
+      "MySQL",
+      "Tailwind CSS",
+      "JWT"
     ]
   },
 
@@ -61,6 +62,22 @@ export const projects = [
       "Streamlit",
       "Pandas",
       "Scikit-learn"
+    ]
+  },
+
+  {
+    id: 5,
+    title: "Campus Events Portal",
+    subtitle: "College Event Management Platform",
+    description:
+      "A full-stack web application for managing campus events with student registration, QR-based attendance, certificate generation, and an administrative dashboard.",
+    image: "/project-images/campus.png",
+    github: "https://github.com/ruhaeilaf-33/campus_events_portal",
+    tech: [
+      "Django",
+      "HTML",
+      "CSS",
+      "JavaScript"
     ]
   }
 ];
