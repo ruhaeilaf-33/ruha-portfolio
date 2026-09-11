@@ -9,7 +9,7 @@ import {
 
 function Contact() {
   return (
-    <section className="contact" id="contact">
+    <section className="contact reveal" id="contact">
 
       <div className="contact-content">
 
@@ -78,7 +78,7 @@ function Contact() {
           {/* Resume */}
 
           <a
-            href="/resume/Ruha_Eilaf_Resume.pdf"
+            href="/resume/ruha_resume (2).pdf"
             download
             className="contact-item"
           >

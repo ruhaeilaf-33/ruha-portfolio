@@ -4,19 +4,31 @@ import { FaMoon, FaSun } from "react-icons/fa";
 
 function Navbar() {
 
+  // The portfolio is intentionally cream-led on every fresh visit.
   const [theme, setTheme] = useState("light");
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
 
-    const savedTheme = localStorage.getItem("theme") || "light";
-
-    setTheme(savedTheme);
-
     document.documentElement.setAttribute(
       "data-theme",
-      savedTheme
+      theme
     );
 
+  }, [theme]);
+
+  useEffect(() => {
+    const sections = Array.from(document.querySelectorAll<HTMLElement>("section[id]"));
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visibleSection = entries.find((entry) => entry.isIntersecting);
+        if (visibleSection) setActiveSection(visibleSection.target.id);
+      },
+      { rootMargin: "-25% 0px -65%", threshold: 0 }
+    );
+
+    sections.forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
   }, []);
 
   const toggleTheme = () => {
@@ -30,11 +42,6 @@ function Navbar() {
 
     document.documentElement.setAttribute(
       "data-theme",
-      newTheme
-    );
-
-    localStorage.setItem(
-      "theme",
       newTheme
     );
 
@@ -58,23 +65,23 @@ function Navbar() {
           <ul className="nav-links">
 
             <li>
-              <a href="#home">Home</a>
+              <a className={activeSection === "home" ? "is-active" : ""} href="#home">Home</a>
             </li>
 
             <li>
-              <a href="#about">About</a>
+              <a className={activeSection === "about" ? "is-active" : ""} href="#about">About</a>
             </li>
 
             <li>
-              <a href="#skills">Skills</a>
+              <a className={activeSection === "skills" ? "is-active" : ""} href="#skills">Skills</a>
             </li>
 
             <li>
-              <a href="#projects">Projects</a>
+              <a className={activeSection === "projects" ? "is-active" : ""} href="#projects">Projects</a>
             </li>
 
             <li>
-              <a href="#contact">Contact</a>
+              <a className={activeSection === "contact" ? "is-active" : ""} href="#contact">Contact</a>
             </li>
 
           </ul>

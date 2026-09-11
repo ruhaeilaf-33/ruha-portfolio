@@ -34,10 +34,20 @@ function Hero() {
 
         </p>
 
+        <div className="hero-thought" aria-label="Personal thoughts">
+          <span className="thought-stage" aria-hidden="true">
+            <span>Building insights</span>
+            <span>Turning ideas into impact</span>
+            <span>Creating intelligent solutions</span>
+            <span>Learning • Building • Growing</span>
+            <span>Curious about what&apos;s next</span>
+          </span>
+        </div>
+
         <div className="hero-buttons">
 
           <a
-            href="/resume/Ruha_Eilaf_Resume.pdf"
+            href="/resume/ruha_resume (2).pdf"
             className="primary-btn"
             download
           >
@@ -96,6 +106,19 @@ function Hero() {
       <div className="hero-right">
 
         <div className="hero-image-wrapper">
+
+          <span className="orbit orbit-one" aria-hidden="true"></span>
+          <span className="orbit orbit-two" aria-hidden="true"></span>
+          <span className="orbit-node node-one" aria-hidden="true"></span>
+          <span className="orbit-node node-two" aria-hidden="true"></span>
+          <span className="hero-sparkle sparkle-one" aria-hidden="true">✦</span>
+          <span className="hero-sparkle sparkle-two" aria-hidden="true">✦</span>
+          <span className="hero-sparkle sparkle-three" aria-hidden="true">✦</span>
+          <span className="idea-chip visual-chip" aria-hidden="true">✦&nbsp; Ideas</span>
+          <span className="code-chip visual-chip" aria-hidden="true">&lt;/&gt;&nbsp; Code</span>
+          <span className="data-chip visual-chip" aria-hidden="true">▥&nbsp; Data</span>
+          <span className="impact-chip visual-chip" aria-hidden="true">✧&nbsp; Impact</span>
+          <span className="hero-quote" aria-hidden="true">“A curious mind<br />builds a kinder<br />tech world.”<small>— RUHA</small></span>
 
           <div className="hero-circle"></div>
 

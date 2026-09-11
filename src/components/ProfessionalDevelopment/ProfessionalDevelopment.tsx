@@ -6,11 +6,12 @@ import {
   FaCode,
   FaTrophy
 } from "react-icons/fa";
+import EditorialSlider from "../EditorialSlider/EditorialSlider";
 
 function ProfessionalDevelopment() {
   return (
     <section
-      className="professional-development"
+      className="professional-development reveal"
       id="professional-development"
     >
 
@@ -32,6 +33,8 @@ function ProfessionalDevelopment() {
         </p>
 
       </div>
+
+      <EditorialSlider label="Professional development activities" items={["Hackathon", "Problem Solving", "Software Development", "Cybersecurity", "Teamwork", "Django", "Volunteering", "Competitive Programming"]} />
 
       <div className="development-grid">
 

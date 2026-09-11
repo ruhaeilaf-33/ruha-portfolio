@@ -1,4 +1,5 @@
 import "./Certifications.css";
+import EditorialSlider from "../EditorialSlider/EditorialSlider";
 
 const certifications = [
   {
@@ -40,7 +41,7 @@ const certifications = [
 
 function Certifications() {
   return (
-    <section className="certifications" id="certifications">
+    <section className="certifications reveal" id="certifications">
 
       <div className="certifications-header">
 
@@ -59,6 +60,8 @@ function Certifications() {
         </p>
 
       </div>
+
+      <EditorialSlider label="Learning providers" items={["NPTEL", "AWS", "Google Cloud"]} />
 
       <div className="certifications-list">
 

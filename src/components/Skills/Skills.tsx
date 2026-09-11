@@ -7,10 +7,11 @@ import {
   FaCloud,
   FaTools,
 } from "react-icons/fa";
+import EditorialSlider from "../EditorialSlider/EditorialSlider";
 
 function Skills() {
   return (
-    <section className="skills" id="skills">
+    <section className="skills reveal" id="skills">
 
       <p className="section-tag">
         SKILLS
@@ -20,6 +21,8 @@ function Skills() {
         Technologies I
         <span> Work With.</span>
       </h2>
+
+      <EditorialSlider label="Technologies I work with" items={["Python", "Java", "SQL", "JavaScript", "React", "HTML", "CSS", "Django", "Node.js", "AWS", "Google Cloud", "Git", "GitHub"]} />
 
       <div className="skills-grid">
 

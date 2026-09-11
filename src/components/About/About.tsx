@@ -8,7 +8,7 @@ import {
 
 function About() {
   return (
-    <section className="about" id="about">
+    <section className="about reveal" id="about">
 
       <div className="about-left">
 

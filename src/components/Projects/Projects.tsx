@@ -1,9 +1,10 @@
 import "./Projects.css";
 import { projects } from "../../data/projects";
+import EditorialSlider from "../EditorialSlider/EditorialSlider";
 
 function Projects() {
   return (
-    <section className="projects" id="projects">
+    <section className="projects reveal" id="projects">
 
       <div className="projects-header">
 
@@ -22,6 +23,8 @@ function Projects() {
         </p>
 
       </div>
+
+      <EditorialSlider label="Project themes" items={["AI & ML", "Web Development", "Data Analytics", "Problem Solving", "Real-world Applications"]} />
 
       <div className="projects-wrapper">
 

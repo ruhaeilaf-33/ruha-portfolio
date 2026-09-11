@@ -2,30 +2,30 @@
 
     /* Background */
 
-    --bg:#FAF8F6;
+    --bg:#FCF9F4;
 
     --surface:#FFFFFF;
 
     /* Text */
 
-    --heading:#1F2430;
+    --heading:#20263A;
 
-    --text:#5F6778;
+    --text:#5D6577;
 
     /* Accent */
 
-    --accent:#7A5AA6;
+    --accent:#7657A5;
 
-    --accent-hover:#65498C;
+    --accent-hover:#62458F;
 
     /* UI */
 
-    --border:#ECE5DF;
+    --border:#E9E2DB;
 
-    --tag:#F8F5FB;
+    --tag:#F7F2FA;
 
     --shadow:
-        0 15px 40px rgba(0,0,0,.05);
+        0 15px 40px rgba(43,34,57,.055);
 
     --radius:20px;
 
@@ -35,11 +35,14 @@
 
     /* Theme Extras */
 
-    --accent-soft:#F1ECF8;
+    --accent-soft:#F0E9F7;
 
     --accent-outline:#D6C9EA;
 
-    --navbar-bg:rgba(250,248,246,.92);
+    --navbar-bg:rgba(252,249,244,.92);
+    --peach:#F4CDC3;
+    --ink-soft:#303950;
+    --lavender-wash:rgba(118,87,165,.11);
 
 }
 
@@ -83,5 +86,8 @@
     --accent-outline:rgba(155,123,201,.28);
 
     --navbar-bg:rgba(19,20,23,.92);
+    --peach:#B67872;
+    --ink-soft:#E5E2EC;
+    --lavender-wash:rgba(155,123,201,.16);
 
 }
