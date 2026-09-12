@@ -1,7 +1,44 @@
 import "./Hero.css";
 import profile from "../../assets/profile.png";
+import { useEffect, useRef, useState } from "react";
 
 function Hero() {
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
+  const resumeButtonRef = useRef<HTMLButtonElement>(null);
+  const closeButtonRef = useRef<HTMLButtonElement>(null);
+  const resumeFrameRef = useRef<HTMLIFrameElement>(null);
+  const hasOpenedResumeRef = useRef(false);
+  const resumePath = "/resume/ruha_resume (2).pdf";
+
+  const closeResume = () => setIsResumeOpen(false);
+
+  useEffect(() => {
+    if (!isResumeOpen) {
+      if (hasOpenedResumeRef.current) resumeButtonRef.current?.focus();
+      return;
+    }
+
+    hasOpenedResumeRef.current = true;
+    const originalOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    closeButtonRef.current?.focus();
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") closeResume();
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = originalOverflow;
+    };
+  }, [isResumeOpen]);
+
+  const handlePrint = () => {
+    resumeFrameRef.current?.contentWindow?.focus();
+    resumeFrameRef.current?.contentWindow?.print();
+  };
+
   return (
     <section className="hero" id="home">
 
@@ -46,13 +83,14 @@ function Hero() {
 
         <div className="hero-buttons">
 
-          <a
-            href="/resume/ruha_resume (2).pdf"
+          <button
+            type="button"
             className="primary-btn"
-            download
+            ref={resumeButtonRef}
+            onClick={() => setIsResumeOpen(true)}
           >
             Resume
-          </a>
+          </button>
 
           <a
             href="#projects"
@@ -134,6 +172,41 @@ function Hero() {
         </div>
 
       </div>
+
+      {isResumeOpen && (
+        <div className="resume-modal-backdrop" role="presentation" onMouseDown={closeResume}>
+          <section
+            className="resume-modal"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="resume-modal-title"
+            onMouseDown={(event) => event.stopPropagation()}
+          >
+            <header className="resume-modal-header">
+              <h2 id="resume-modal-title">Ruha Eilaf — Resume</h2>
+              <div className="resume-modal-actions">
+                <button type="button" onClick={handlePrint}>Print / Save PDF</button>
+                <a href={resumePath} download>Download</a>
+                <button
+                  type="button"
+                  className="resume-modal-close"
+                  ref={closeButtonRef}
+                  onClick={closeResume}
+                  aria-label="Close resume viewer"
+                >
+                  ×
+                </button>
+              </div>
+            </header>
+            <iframe
+              ref={resumeFrameRef}
+              className="resume-modal-frame"
+              src={resumePath}
+              title="Ruha Eilaf resume"
+            />
+          </section>
+        </div>
+      )}
 
     </section>
   );
